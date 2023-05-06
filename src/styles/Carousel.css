@@ -1,0 +1,213 @@
+@import url("Home.css");
+.carousel{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.carousel-img{
+    height: 415px;
+    width: 100%;
+    border-radius: 25px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide-button{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: absolute;
+    width: 95%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.index{
+    position: absolute;
+    left: 48%;
+    bottom: 20px;
+    color: white;
+    font-size: 20px;
+
+}
+.room-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+.location h1{
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.location{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.tags{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.tag{
+    height: 25px;
+    width: 145px;
+    border-radius: 10px;
+    background-color: #FF6060;
+    margin:0 10px 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+}
+.tag span{
+    color: white;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.room-detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 26px;
+}
+.room-detail > div {
+    width: 48%;
+  }
+.host-rating{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+  .host{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .host img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+  .rating{
+    text-align: end;
+  }
+  .names{
+    margin-right: 10px;
+    height: 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .names li{
+    list-style-type: none;
+    color: #FF6060;
+  }
+  @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait){
+    .carousel-img{
+        height: 255px;
+        border-radius: 10px;
+    }
+    .room-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .location h1{
+        font-size: 28px;
+    }
+    .tag{
+        height: 25px;
+        width: 20vw;
+    }
+    .host-rating{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+   
+  }
+  @media (max-width: 767px) and (orientation: portrait){
+
+    .room-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .location h1{
+        font-size: 18px;
+        white-space:break-spaces;
+        width: 100%;
+    }
+   
+    .carousel-img{
+        height: 255px;
+        border-radius: 10px;
+    }
+ 
+    .names{
+        font-size: 18px;
+    }
+    .room-detail{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .room-detail > div {
+        width: 100%;
+    }
+    .tags{
+        margin-bottom: 18px;
+    }
+    .tag span{
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .tag{
+        height: 18px;
+        width: 105px;
+        margin-right:4px;
+    }
+   
+    .rating{
+        font-size: 10px;
+    }
+    .host-rating{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+  }
+  @media (max-width: 360px) and (orientation: portrait){
+    .host{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+    .host-rating{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+  }
